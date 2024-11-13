@@ -1,0 +1,32 @@
+@import './fonts.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+@mixin flex($justify, $align, $row, $column, $direction, $wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  row-gap: $row;
+  column-gap: $column;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin grid($column, $row, $rgap, $cgap, $justify, $align) {
+  display: grid;
+  grid-template-columns: $column;
+  grid-template-rows: $row;
+  row-gap: $rgap;
+  column-gap: $cgap;
+  justify-content: $justify;
+  align-items: $align;
+}

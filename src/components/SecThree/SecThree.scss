@@ -1,0 +1,67 @@
+@import "../../styles/global.scss";
+
+div.mainS3 {
+  padding: 60px 0px;
+  background-color: #e0e3eb;
+  @include flex(center, center, 38px, unset, column, nowrap);
+  div.text {
+    max-width: 539px;
+    @include flex(center, center, 20px, unset, column, nowrap);
+    .mainS3 {
+      font-size: 36px;
+      color: #292e3d;
+      font-family: font;
+      font-weight: bold;
+    }
+    p.text {
+      font-size: 20px;
+      font-family: font;
+      text-align: center;
+    }
+  }
+  .input {
+    max-width: 592px;
+    @include flex(space-between, center, 32px, 20px, row, wrap);
+    input {
+      max-width: 280px;
+      width: 100%;
+      height: 41px;
+      padding: 5px;
+      font-size: 18px;
+      font-family: font;
+    }
+    .textArea {
+      width: 100%;
+
+      .writtingArea {
+        width: 100%;
+        height: 135px;
+        padding: 5px;
+        font-size: 18px;
+        font-family: font;
+      }
+      .lastText {
+        font-size: 16px;
+        font-family: font;
+        color: #667299;
+        span {
+          color: red;
+        }
+      }
+    }
+    .forBtn {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      button {
+        margin-top: 8px;
+        padding: 16px 103px;
+        background-color: #2947a9;
+        color: #fff;
+        font-family: font;
+        font-size: 18px;
+        border: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../styles/global.scss";
+
+.secTwo {
+  padding-top: 44px;
+  padding-bottom: 76px;
+  background-color: #e0e3eb;
+  @include flex(center, center, 36px, unset, column, nowrap);
+  p.mainTitle {
+    font-size: 36px;
+    color: #292e3d;
+    font-family: font;
+    font-weight: bold;
+  }
+  .boxes {
+    @include grid(repeat(3, 271px), repeat(2, 181px), 48px, 98px, unset, unset);
+    // .boxs2 {
+    //   @include flex(center, center, 20px, unset, column, nowrap);
+    //   padding: 38px 0px;
+    // }
+  }
+}
+
+// .boxes .boxs2:nth-child(odd) {
+//   background-color: #ffffff;
+//   p {
+//     color: #2947a9;
+//     font-size: 20px;
+//     font-family: font;
+//     font-weight: 400;
+//   }
+// }
+// .boxes .boxs2:nth-child(even) {
+//   background-color: #2947a9;
+//   p {
+//     color: #ffffff;
+//     font-size: 20px;
+//     font-family: font;
+//     font-weight: 400;
+//   }
+// }
