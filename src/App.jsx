@@ -1,19 +1,11 @@
-import Nav from "./components/Nav/Nav";
-import SecOne from "./components/SecOne/SecOne";
-import SecTwo from "./components/SecTwo/SecTwo";
-import SecThree from "./components/SecThree/SecThree";
-import Footer from "./components/Footer/Footer";
+import Calculation from "./components/Calculation/Calculation";
 
-import "./App.scss";
+import "./App.css";
 
 function App() {
   return (
     <div>
-      <Nav />
-      <SecOne />
-      <SecTwo />
-      <SecThree />
-      <Footer />
+      <Calculation />
     </div>
   );
 }
