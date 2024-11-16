@@ -5,12 +5,36 @@
   padding: 0;
   box-sizing: border-box;
 }
-  
+
 a {
   text-decoration: none;
 }
-  
+
 ul,
 ol {
   list-style: none;
+}
+
+.buttons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 30px;
+  .btn {
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-color: rgb(250, 223, 18);
+    border: none;
+    font-size: 20px;
+    margin-top: 30px;
+    border: 2px solid rgb(250, 223, 18);
+    transition: all 0.5s;
+    &:hover {
+      background-color: transparent;
+      transform: translateY(-5px) ;
+    }
+    &:active {
+      background-color: rgb(245, 183, 69);
+    }
+  }
 }

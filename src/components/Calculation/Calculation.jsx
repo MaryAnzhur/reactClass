@@ -1,14 +1,39 @@
+import { useState } from "react";
+
 import "./Calculation.css";
 
 function Calculation() {
+  const [number, setNumber] = useState(0);
+  const add = (num) => {
+    switch (num) {
+      case "+1":
+        setNumber(number + 1);
+        break;
+      case "-1":
+        setNumber(number - 1);
+        break;
+      case "x2":
+        setNumber(number * 2);
+        break;
+      case "/2":
+        setNumber(number / 2);
+        break;
+    }
+  };
+
+  let calculArr = ["+1", "-1", "x2", "/2"];
+
   return (
-    <div>
-      <div className="numberArea"></div>
+    <div className="mainCal">
+      <div className="numberArea">
+        <p>{number}</p>
+      </div>
       <div className="action">
-        <button className="calcul">+1</button>
-        <button className="calcul">-1</button>
-        <button className="calcul">x2</button>
-        <button className="calcul">/2</button>
+        {calculArr.map((elm) => (
+          <button className="calcul" onClick={() => add(elm)}>
+            {elm}
+          </button>
+        ))}
       </div>
     </div>
   );
