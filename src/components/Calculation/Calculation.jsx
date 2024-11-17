@@ -29,8 +29,8 @@ function Calculation() {
         <p>{number}</p>
       </div>
       <div className="action">
-        {calculArr.map((elm) => (
-          <button className="calcul" onClick={() => add(elm)}>
+        {calculArr.map((elm, index) => (
+          <button key={index} className="calcul" onClick={() => add(elm)}>
             {elm}
           </button>
         ))}
