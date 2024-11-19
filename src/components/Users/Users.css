@@ -11,15 +11,12 @@
     display: grid;
     grid-template-columns: 60px 150px 150px 80px 200px 300px 120px;
     transition: all 1s;
-    &:hover {
-      transform: scale(1.05);
-    }
-    .withImg{
-        display: flex;
-        gap: 5px;
-        .passP{
-            text-overflow: ellipsis
-        }
+    .withImg {
+      display: flex;
+      gap: 5px;
+      .passP {
+        text-overflow: ellipsis;
+      }
     }
   }
 
@@ -33,14 +30,17 @@
       grid-template-columns: 30px 150px 150px 80px 200px 300px 120px;
       align-items: center;
       transition: all 1s;
+      border: 2px solid transparent;
       &:hover {
-        transform: scale(1.05);
+        border: 2px solid rgb(212, 189, 234);
+        background-color: white;
       }
       img {
         max-width: 120px;
       }
-      .passP{
-        text-security: disc;
+      .withImg {
+        display: flex;
+        gap: 5px;
       }
       .deleteBtn {
         padding: 15px;
