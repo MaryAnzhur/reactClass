@@ -1,0 +1,30 @@
+.mainNav {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+  .form {
+    background-color: rgb(253, 184, 80);
+    border-radius: 30px;
+    padding: 20px;
+    .inputArea {
+      padding: 10px 20px;
+      margin-right: 30px;
+      transition: all .7s;
+      border-radius: 30px;
+      border: none;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    .inputBtn {
+        background-color: rgb(255, 166, 32);
+        box-shadow: 1px 1px 3px 3px white;
+        color: white;
+        font-weight: 700;
+        &:hover {
+            background-color: white;
+            color: rgb(255, 166, 32);
+        }
+    }
+  }
+}
