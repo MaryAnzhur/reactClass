@@ -26,24 +26,28 @@ function Users() {
   const [name, setName] = useState(true);
   const [age, setAge] = useState(true);
   const [date, setDate] = useState(true);
-  const [password, setPassword] = useState(0);
+  const [password, setPassword] = useState({});
 
   const seeHidePass = (userId) => {
-    let updatedArr = [];
-    if (password === 0) {
-      updatedArr = user.map((item) => ({
-        ...item,
-        isOpen: item.id === userId,
-      }));
-      setPassword(1);
-    } else {
-      updatedArr = user.map((item) => ({
-        ...item,
-        isOpen: false,
-      }));
-      setPassword(0);
-    }
-    setUser(updatedArr);
+    setPassword({
+      [userId]: !password[userId],
+    });
+
+    // let updatedArr = [];
+    // if (password === 0) {
+    //   updatedArr = user.map((item) => ({
+    //     ...item,
+    //     isOpen: item.id === userId,
+    //   }));
+    //   setPassword(1);
+    // } else {
+    //   updatedArr = user.map((item) => ({
+    //     ...item,
+    //     isOpen: false,
+    //   }));
+    //   setPassword(0);
+    // }
+    // setUser(updatedArr);
   };
 
   const sortId = () => {
@@ -151,9 +155,9 @@ function Users() {
               <p>{elm.name}</p>
               <p>{elm.age}</p>
               <div className="withImg">
-                <p>{!elm.isOpen ? "**************" : elm.password}</p>
+                <p>{!password[elm.id] ? "**************" : elm.password}</p>
                 <img
-                  src={!elm.isOpen ? see : hide}
+                  src={!password[elm.id] ? see : hide}
                   alt="eye icon"
                   onClick={() => seeHidePass(elm.id)}
                 />
