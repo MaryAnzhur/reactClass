@@ -1,6 +1,6 @@
 import "./Body.css";
 
-function Body({ inputData, deleteBox, doneBox, checkbox }) {
+function Body({ inputData, deleteBox, doneBox, seenBox }) {
   return (
     <div className="mainBody">
       <div className="heading">
@@ -14,7 +14,7 @@ function Body({ inputData, deleteBox, doneBox, checkbox }) {
       <div className="boxes">
         {inputData.map((elm) => {
           return (
-            <div className={checkbox === false ? "box" : "red"} key={elm.id}>
+            <div className={elm.done ? "red" : "box"} key={elm.id}>
               <input
                 className="boxItems"
                 type="checkbox"
@@ -23,10 +23,24 @@ function Body({ inputData, deleteBox, doneBox, checkbox }) {
               <p className="boxItems">{elm.name}</p>
               <p className="boxItems">{elm.sname}</p>
               <p className="boxItems">{elm.login}</p>
-              <p className="boxItems">{elm.password}</p>
-              <p className="boxItems" onClick={() => deleteBox(elm.id)}>
+              {elm.seen ? (
+                <p className="boxItems" onClick={() => seenBox(elm.id)}>
+                  {" "}
+                  {elm.password}{" "}
+                </p>
+              ) : (
+                <p className="boxItems" onClick={() => seenBox(elm.id)}>
+                  ********
+                </p>
+              )}
+
+              {/* </p>
+              <p className="boxItems" onClick={() => seenBox(elm.id)}>
+                {elm.seen ? {elm.password}}
+              </p> */}
+              <button className="boxBtn" onClick={() => deleteBox(elm.id)}>
                 &#10006;
-              </p>
+              </button>
             </div>
           );
         })}

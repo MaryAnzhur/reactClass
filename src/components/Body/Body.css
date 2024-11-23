@@ -7,10 +7,9 @@
     display: grid;
     grid-template-columns: 50px 150px 180px 180px 180px 130px;
     margin-bottom: 40px;
-    .headingP{
-        font-weight: 700;
-        color: orange;
-
+    .headingP {
+      font-weight: 700;
+      color: orange;
     }
   }
   .box {
@@ -20,18 +19,31 @@
     border: 3px solid rgb(253, 184, 80);
     border-radius: 30px;
     margin: 5px 0px;
-    .boxItems{
-        cursor: pointer;
+    background-color: transparent;
+    .boxItems {
+      cursor: pointer;
+    }
+    .boxBtn {
+      padding: 5px;
+      max-width: 50px;
+      background-color: rgb(253, 184, 80);
+      border-radius: 50px;
+      color: white;
+      border: none;
+      cursor: pointer;
     }
   }
-}
-
-.red {
-    background-color: red;
+  .red {
+    background-color: rgb(247, 226, 196);
     display: grid;
     grid-template-columns: 50px 150px 180px 180px 180px 130px;
     padding: 20px;
-    border: 3px solid rgb(253, 184, 80);
+    border: 3px solid forestgreen;
+    color: forestgreen;
     border-radius: 30px;
     margin: 5px 0px;
+    .boxBtn {
+      visibility: hidden;
+    }
+  }
 }

@@ -6,11 +6,10 @@ import "./App.css";
 
 function App() {
   const [inputData, setInputData] = useState([]);
-  const [check, setCheck] = useState(false);
-
   const drawInput = (e) => {
     e.preventDefault();
-    const { name, sname, login, password } = e.target;
+    const formData = e.target;
+    const { name, sname, login, password } = formData;
     const data = {
       id: new Date().getTime(),
       name: name.value,
@@ -21,23 +20,49 @@ function App() {
       seen: false,
     };
     setInputData([...inputData, data]);
-    name.value = "";
-    sname.value = "";
-    login.value = "";
-    password.value = "";
+    formData.reset();
+  };
+
+  const seenBox = (id) => {
+    const passArr = inputData.map((elm) => {
+      if (elm.id === id) {
+        elm.seen = !elm.seen;
+      } else {
+        elm.seen = false;
+      }
+      return elm;
+    });
+    setInputData(passArr);
   };
 
   const doneBox = (id) => {
-    const doneItem = inputData.filter((elm) => {
-      return elm.id === id;
+    const seenArr = inputData.map((elm) => {
+      if (elm.id === id) {
+        elm.done = !elm.done;
+      }
+      return elm;
     });
-    setCheck(!doneItem[0].done);
+    setInputData(seenArr);
   };
+
+  // const doneBox = (id) => {
+  //   const checkedArray = inputData.map((elm) => {
+  //     if (elm.id === id) {
+  //       elm.done = !check;
+  //       console.log(elm.done);
+  //     } else {
+  //       elm.done = check;
+  //     }
+  //     return elm;
+  //   });
+  //   // setCheck(checkedArray);
+  //   setInputData(checkedArray);
+  //   console.log(inputData);
+  // };
 
   const deleteBox = (id) => {
     const deletedItem = inputData.filter((elm) => elm.id !== id);
     setInputData(deletedItem);
-    console.log(deletedItem);
   };
 
   return (
@@ -47,7 +72,7 @@ function App() {
         inputData={inputData}
         deleteBox={deleteBox}
         doneBox={doneBox}
-        checkbox={check}
+        seenBox={seenBox}
       />
     </div>
   );
