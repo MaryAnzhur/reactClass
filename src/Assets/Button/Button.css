@@ -1,0 +1,13 @@
+.deleteBtn {
+  background-color: white;
+  width: 80px;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 20px;
+  transition: all .8s;
+  background-color: rgb(238, 252, 221);
+  color: forestgreen;
+  &:hover{
+    background-color: rgb(255, 208, 0);
+  }
+}

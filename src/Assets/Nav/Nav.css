@@ -1,0 +1,24 @@
+.mainNav{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+    .form {
+        display: inline-flex;
+        justify-content: center;
+        gap: 60px;
+        padding: 20px 60px;
+        background-color: rgb(137, 234, 57);
+        border-radius: 50px;
+        input {
+            border-radius: 30px;
+            border: none;
+            padding: 10px 20px;
+            background-color: whitesmoke;
+            color: gray;
+            transition: all .8s;
+            &:hover {
+                background-color: rgb(207, 255, 169)
+            }
+        }
+    }
+}

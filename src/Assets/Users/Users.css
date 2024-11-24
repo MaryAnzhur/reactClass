@@ -1,0 +1,47 @@
+.mainUsers {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .userTitle {
+    display: flex;
+    padding: 5px 60px;
+    gap: 60px;
+    width: 670px;
+    .userData {
+        display: flex;
+        gap: 20px;
+      width: 180px;
+      border-radius: 30px;
+      padding: 10px 20px;
+      border: 2px solid transparent;
+      transition: all 0.8s;
+      &:hover {
+        border: 2px solid rgb(89, 189, 7);
+      }
+    }
+    .userP {
+      color: rgb(89, 189, 7);
+      font-weight: bolder;
+    }
+  }
+  .userBox {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 60px;
+    padding: 5px 60px;
+    .userData {
+      width: 180px;
+      border: 1px solid rgb(255, 208, 0);
+      color: forestgreen;
+      font-weight: bolder;
+      border-radius: 30px;
+      padding: 10px 20px;
+      text-align: center;
+      transition: all .8s;
+      &:hover{
+        background-color: rgb(255, 208, 0);
+      }
+    }
+  }
+}
