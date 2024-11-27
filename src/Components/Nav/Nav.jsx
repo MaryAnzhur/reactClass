@@ -21,6 +21,7 @@ function Nav({ setPath, setSource }) {
             onClick={() => dataIdentify(elm.path, elm.source, elm.name)}
           >
             {elm.name}
+            {/* asfas */}
           </li>
         ))}
       </ul>
