@@ -1,0 +1,25 @@
+ul {
+  padding: 30px;
+  background-color: rgb(185, 215, 255);
+  display: flex;
+  justify-content: space-around;
+  li {
+    font-weight: bold;
+    .links {
+      color: white;
+      font-size: 20px;
+      border: 2px dotted white;
+      padding: 8px 16px;
+      border-radius: 30px;
+      background-color: transparent;
+      transition: all .8s;
+    }
+    .active{
+        background-color: white;
+        border: 2px solid white;
+        color: rgb(185, 215, 255);
+    
+    }
+  }
+}
+
