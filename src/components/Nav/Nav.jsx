@@ -8,6 +8,9 @@ function Nav() {
   return (
     <ul>
       <li>
+        <NavLink to={ROUTES.Home} className='links'>Home</NavLink>
+      </li>
+      <li>
         <NavLink to={ROUTES.Group1} className='links'>Group 1</NavLink>
       </li>
       <li>
