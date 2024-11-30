@@ -1,0 +1,10 @@
+.mainFooter{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    background-color: rgb(40, 39, 39);
+    padding: 10px 20px;
+    img {
+        max-width: 40px;
+    }
+}

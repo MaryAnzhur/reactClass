@@ -1,0 +1,25 @@
+.mainNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  img {
+    max-width: 150px;
+  }
+  ul {
+    display: flex;
+    gap: 20px;
+    .navLi {
+      color: #0C2D48;
+      padding: 10px 20px;
+      transition: all 0.8s;
+      font-weight: bold;
+    }
+    .active {
+      color: white;
+      background-color: #0C2D48;
+      border-radius: 30px;
+      font-weight: bold;
+
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.box{
+    img{
+        max-width: 100px;
+    }
+    .description{
+        h2{
+            font-size: 18px;
+        }
+    }
+}
