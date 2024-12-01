@@ -1,0 +1,22 @@
+.navMain{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    padding: 30px 0px;
+    background-color: #fef2f0;
+    position: sticky;
+    top: 0;
+    .navItems{
+        border-radius: 30px;
+        border: solid 2px #d9aba2;
+        color: #d9aba2;
+        font-weight: bold;
+        padding: 10px 30px;
+        transition: all .5s;
+    }
+}
+
+.active{
+    background-color: #d9aba2;
+    color: white !important;
+}
