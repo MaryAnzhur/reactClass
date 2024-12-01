@@ -1,5 +1,6 @@
 import Nav from "./Components/Nav/Nav";
 import Footer from "./Components/Footer/Footer";
+import Product from "./pages/Product/Product";
 import { Home, Products, ContactUs } from "./pages";
 import { Route, Routes } from "react-router-dom";
 import ROUTES from './Routes'
@@ -15,6 +16,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path={ROUTES.PRODUCTS} element={<Products />} />
           <Route path={ROUTES.CONTACT} element={<ContactUs />} />
+          <Route path={ROUTES.PRODUCT} element={<Product />} />
         </Route>
       </Routes>
       <Footer />
