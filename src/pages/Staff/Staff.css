@@ -1,0 +1,16 @@
+.mainStaff{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: #fffdfd;
+    img{
+        border-radius: 50%;
+        transition: all 1s;
+        &:hover{
+            transform: scale(1.15);
+        }
+    }
+}

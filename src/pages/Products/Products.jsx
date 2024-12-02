@@ -82,6 +82,8 @@ export const Products = () => {
               image={elm.image}
               title={elm.title}
               price={elm.price}
+              category={elm.category}
+              id = {elm.id}
             />
           );
         })}

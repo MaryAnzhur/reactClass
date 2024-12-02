@@ -4,7 +4,7 @@ const ROUTES = {
   CONTACTUS: "contactUs",
   PRODUCTS: "products",
   PRODUCT: "products/:category/:id",
-  STAFF: "stuff",
+  STAFF: "staff",
   WORKER: "staff/:name/:id",
 };
 

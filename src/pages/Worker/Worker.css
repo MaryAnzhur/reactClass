@@ -1,0 +1,40 @@
+.mainWorker{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    position: relative;
+  .material-symbols-outlined {
+    position: absolute;
+    background-color: #fffbfb;
+    color: #d9aba2;
+    padding: 20px;
+    user-select: none;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: all 0.5s;
+    &:hover {
+      background-color: white;
+      border: 2px solid #d9aba2;
+    }
+  }
+  .left {
+    top: 130px;
+    left: 530px;
+  }
+  .right {
+    top: 130px;
+    right: 530px;
+  }
+    .worker{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        img{
+            border-radius: 50%;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.mainProduct {
+  position: relative;
+  .material-symbols-outlined {
+    position: absolute;
+    background-color: #fffbfb;
+    color: #d9aba2;
+    padding: 20px;
+    user-select: none;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: all 0.5s;
+    &:hover {
+      background-color: white;
+      border: 2px solid #d9aba2;
+    }
+  }
+  .left {
+    top: 350px;
+    left: 30px;
+  }
+  .right {
+    top: 350px;
+    right: 30px;
+  }
+  .mainBox {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    gap: 50px;
+    img {
+      max-height: 500px;
+    }
+    .data {
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 70px 0px;
+      h2 {
+        font-size: 40px;
+      }
+      h3 {
+        font-size: 25px;
+        .cat {
+          font-weight: 300;
+          background-color: transparent;
+        }
+      }
+      p {
+        font-size: 18px;
+      }
+      .price {
+        color: rgb(4, 4, 53);
+        padding: 100px 0px;
+        font-size: 30px;
+      }
+    }
+  }
+}

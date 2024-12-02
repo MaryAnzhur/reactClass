@@ -1,0 +1,14 @@
+.mainAbout{
+    display: flex;
+    background-color: #fffaf7;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 250px;
+    gap: 30px;
+    .about{
+        border: 4px double #d9aba2;
+        padding: 20px;
+        max-width: 600px;
+    }
+}
