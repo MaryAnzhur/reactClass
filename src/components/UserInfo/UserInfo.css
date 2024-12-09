@@ -1,0 +1,5 @@
+.mainUserInfo{
+    display: grid;
+    grid-template-columns: repeat(7, 215px);
+    padding: 5px 30px;
+}
