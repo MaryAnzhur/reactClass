@@ -1,13 +1,15 @@
-import Data from "./conponents/Data/Data";
-import Form from "./conponents/Form/Form";
+import Data from "./components/Data/Data";
+import UserForm from "./components/UserForm/UserForm";
 
 import "./App.css";
 
 function App() {
-  return <div>
-    <Form />
-    <Data />
-  </div>;
+  return (
+    <div className="app">
+      <UserForm />
+      <Data />
+    </div>
+  );
 }
 
 export default App;
