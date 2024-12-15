@@ -1,4 +1,5 @@
-[
+{
+  "comments": [
     {
       "id": 1,
       "body": "This is some awesome thinking!",
@@ -234,3 +235,4 @@
       }
     }
   ]
+}

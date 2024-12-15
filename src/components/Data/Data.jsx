@@ -1,20 +1,19 @@
-import { useEffect, useState } from "react";
 
 import "./Data.css";
 
-const Data = () => {
-  const [comment, setComment] = useState([]);
+const Data = ({comment}) => {
 
-  useEffect(() => {
-    fetch("http://localhost:3001")
-      .then((res) => res.json())
-      .then((res) => setComment(res));
-  }, []);
+  const delComment=(id)=>{
+fetch(`http://localhost:3001/comments/${id}`, {method:'DELETE'})
+  }  
 
   return (
     <div className="data">
       {comment.map((item, index) => {
-        return <p key={index}>{item.body}</p>;
+        return <div key={index} className="comment">
+          <p>{item.body}</p>
+          <button onClick={()=>delComment(item.id)} className="x">X</button>
+        </div>;
       })}
     </div>
   );

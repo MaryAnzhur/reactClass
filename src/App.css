@@ -12,3 +12,7 @@ ul,
 ol {
   list-style: none;
 }
+
+.app{
+  display: flex;
+}
