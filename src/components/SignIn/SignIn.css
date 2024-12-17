@@ -1,0 +1,46 @@
+.mainSignIn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgb(222, 252, 252);
+  gap: 10px;
+  .exist {
+    color: rgb(222, 252, 252);
+    font-size: 14px;
+  }
+  .visible {
+    color: red;
+    font-size: 14px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    align-items: center;
+    .field {
+      padding: 5px;
+      border-radius: 30px;
+      border: none;
+    }
+  }
+  .divSign {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    margin-top: 50px;
+    p {
+      color: rgb(85, 85, 85);
+    }
+  }
+  .btn {
+    padding: 5px;
+    width: 70px;
+    border-radius: 30px;
+    border: none;
+    background-color: paleturquoise;
+  }
+}

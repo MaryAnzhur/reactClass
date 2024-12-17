@@ -1,0 +1,47 @@
+.mainReg {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(243, 244, 244);
+  position: relative;
+  .form {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 20px;
+    justify-content: center;
+    position: relative;
+    .eachForm {
+      position: relative;
+      .field {
+        width: 300px;
+        padding: 10px;
+        border-radius: 30px;
+        border: none;
+      }
+      .error {
+        position: absolute;
+        top: -15px;
+        left: 15px;
+        font-size: 10px;
+      }
+    }
+    .submit {
+      position: absolute;
+      bottom: -50px;
+      padding: 10px 30px;
+      border: none;
+      border-radius: 30px;
+      background-color: paleturquoise;
+    }
+  }
+  .back {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+  }
+}
