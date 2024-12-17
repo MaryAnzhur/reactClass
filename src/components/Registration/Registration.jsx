@@ -40,9 +40,7 @@ const Registration = () => {
   });
 
   const addUser = (e) => {
-
     const id = nanoid(3);
-    
     axios({
       baseURL: "http://localhost:3001/users",
       method: "POST",
