@@ -11,7 +11,7 @@ const UserForm = () => {
     comment: string().max(50, "*Comment must be 50 characters or less."),
   });
 
-  const addComment = (e) => {
+  const addComment = (e, formik) => {
     fetch("http://localhost:3001/comments", {
       method: "POST",
       body: JSON.stringify({
@@ -19,7 +19,7 @@ const UserForm = () => {
         body: e.comment,
       }),
     });
-    e.comment = "";
+    formik.resetForm();
   };
 
   return (
@@ -27,11 +27,20 @@ const UserForm = () => {
       <Formik
         initialValues={initalValue}
         validationSchema={valudationScema}
-        onSubmit={(e) => addComment(e)}
+        onSubmit={(e, formik) => addComment(e, formik)}
       >
         <Form>
-          <Field type="text" name="comment" placeholder="Write your comment" className='field'/>
-          <ErrorMessage name="comment" component='p' className="error"></ErrorMessage>
+          <Field
+            type="text"
+            name="comment"
+            placeholder="Write your comment"
+            className="field"
+          />
+          <ErrorMessage
+            name="comment"
+            component="p"
+            className="error"
+          ></ErrorMessage>
           <button className="button">Add</button>
         </Form>
       </Formik>
