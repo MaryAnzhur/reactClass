@@ -3,12 +3,40 @@
   padding: 0;
   box-sizing: border-box;
 }
-  
+
 a {
   text-decoration: none;
 }
-  
+
 ul,
 ol {
   list-style: none;
+}
+
+.mainApp {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background-color: black;
+  .numbers {
+    color: orange;
+    font-size: 80px;
+  }
+  .buttons {
+    display: flex;
+    gap: 10px;
+    .button {
+      color: orange;
+      background-color: black;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      transition: all 0.3s;
+      &:hover {
+        border: 2px solid orange;
+      }
+    }
+  }
 }
