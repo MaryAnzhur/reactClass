@@ -29,6 +29,7 @@ function App() {
   };
   const stop = () => {
     setStartTime(false);
+    throw new Error('error')
   };
   const reset = () => {
     setStartTime(false);
