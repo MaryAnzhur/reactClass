@@ -12,3 +12,11 @@ ul,
 ol {
   list-style: none;
 }
+
+.mainApp{
+  display: flex;
+  flex-direction: column;
+  .body1{
+    display: flex;
+  }
+}

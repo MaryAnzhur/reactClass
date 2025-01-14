@@ -1,0 +1,30 @@
+.mainWeek {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  .eachDay {
+    border: 1px solid #000;
+    max-width: 600px;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
+    .tempWeek {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      .date{
+        font-size: 10px;
+      }
+      .temperature{
+        font-size: 20px;
+      }
+      .icon {
+        max-width: 30px;
+      }
+    }
+  }
+}

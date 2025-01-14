@@ -1,0 +1,33 @@
+.mainNav {
+  padding: 20px;
+  background-color: rgb(149, 0, 255);
+  .form {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .text {
+      border-radius: 30px;
+      padding: 8px 20px;
+      border: none;
+    }
+    .search {
+      background-color: rgb(149, 0, 255);
+      border: 1px solid #ffffff;
+      padding: 8px 20px;
+      margin-left: 5px;
+      color: white;
+      border-radius: 30px;
+    }
+    .radio {
+      position: absolute;
+      right: 30px;
+      background-color: white;
+      font-size: 13px;
+      padding: 5px;
+      border-radius: 30px;
+      .c {
+        margin-right: 10px;
+      }
+    }
+  }
+}

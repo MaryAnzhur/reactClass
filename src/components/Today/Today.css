@@ -1,0 +1,16 @@
+.mainToday {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-left: 330px;
+  padding-top: 100px;
+  .city{
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .weatherIcon {
+    max-width: 100px;
+  }
+}
