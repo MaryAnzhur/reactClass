@@ -1,0 +1,31 @@
+.userData{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 50px;
+    gap: 25px;
+    .cardDiv{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        padding: 40px;
+        min-width: 375px;
+        background-color: rgb(254, 225, 173);
+        border-radius: 30px;
+        border: 2px solid transparent;
+        transition: all .5s;
+        &:hover{
+        border: 2px solid orange;
+        background-color: transparent;
+        transform: scale(1.05);
+
+        }
+        .photo{
+            height: 300px;
+        }
+        .name{
+            font-size: 30px;
+        }
+    }
+}
