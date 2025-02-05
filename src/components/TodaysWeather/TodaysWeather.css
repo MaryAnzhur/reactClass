@@ -1,0 +1,13 @@
+.mainToday{
+    margin-top: 40px;
+    display: flex;
+    padding: 60px;
+    background-color: rgb(250, 150, 154);
+    text-align: center;
+    border-radius: 60px;
+    color: white;
+    transition: all 1s;
+    &:hover{
+transform: scale(1.2);
+    }
+}
